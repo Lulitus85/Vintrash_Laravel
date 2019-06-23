@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Subcategory;
 use App\Category;
-use App\Product;
 
-class CategoryController extends Controller
+class SubcategoryController extends Controller
 {
     public function create()
     {
         $categorias = Category::all();
-        return view('category.create')->with('categorias', $categorias);
+        return view('subcategory.create')->with('categorias', $categorias);
     }
 
     public function store(Request $request)
@@ -25,15 +25,12 @@ class CategoryController extends Controller
         ];
 
         $this->validate($request, $reglas, $mensaje);
-
-        $photo = $request->file('photo')->store('categorias', 'public');
         
-        $categoria = new Category($request->all());
+        $subcategoria = new Subcategory($request->all());
 
-        $categoria->photo = $photo;
+        $subcategoria->save();
 
-        $categoria->save();
-
-        return redirect('/category/create');
+        return redirect('/subcategory/create');
     }
+
 }
