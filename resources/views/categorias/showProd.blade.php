@@ -6,7 +6,7 @@
 <h1 style="text-align:center;">Productos {{$categoria->name}} </h1>
 
 <div class="offset-2 col-4" >
-
+<h1>hola</h1>
     
 </div>
 
