@@ -8,8 +8,16 @@ use App\Product;
 
 class CategoryController extends Controller
 {
-    public function show($id){
-        $id = Category::find($id);
-        return view('categories.show')->with('categoria',$id);
+
+    public function index()
+    {
+        $categorias = Category::all();
+        return view('categorias.categorias')->with('categorias',$categorias);
+    }
+
+    public function show($id)
+    {
+        $categoria = Category::find($id);
+        return view('categorias.showProd')->with('categoria',$categoria);
     }
 }
