@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+
 Route::get('/home','HomeController@index');
 
-Route::group(['prefix' => 'category'], function(){
+Route::group(['prefix' => 'categorias'], function(){
+    Route::get('/', 'CategoryController@index');
     Route::get('/{id}', 'CategoryController@show');
 });
 
@@ -25,3 +28,6 @@ Route::group(['prefix' => 'products'], function(){
     // ¿aca van las 5 categorias?  --> o sea el home //
     Route::get('/{id}','ProductController@show');
 });
+
+
+Route::get('/home', 'HomeController@index')->name('home');

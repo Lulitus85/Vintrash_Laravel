@@ -1,35 +1,23 @@
-@extends('master')
+@extends('layouts.app')
 
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-<main class="caja">
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-    <div class="container">
-      <a href="#"><img src="img/banner_pick_your_treasure.svg" alt=""></a>
+                    You are logged in!
+                </div>
+            </div>
+        </div>
     </div>
-    <section class="container1">
-@foreach($categorias as $categoria)
-    <article class="art art1">
-    <a href="/category/ {{$categoria->id }}"></a>
-    </article>
-    <article class="art art2">
-      <a href="/category/ {{$categoria->id }}"></a>
-    </article>
-    <article class="art art3">
-      <a href="/category/ {{$categoria->id }}"></a>
-    </article>
-    <article class="art art4">
-      <a href="/category/ {{$categoria->id }}"></a>
-    </article>
-    <article class="art art5">
-      <a href="/category/ {{$categoria->id }}"></a>
-    </article>
-@endforeach
-    </section>
-    <section class="banner_publicidad">
-      <h1 class="banner"> BANNER DE PUBLICIDAD </h1>
-    </section>
-
-</main>
-
+</div>
 @endsection

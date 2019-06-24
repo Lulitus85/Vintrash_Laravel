@@ -79,6 +79,11 @@ html::-webkit-scrollbar-thumb{
   background-color:white;
 }
 
+.comon{
+  width: 90%;
+  margin:auto;
+}
+
 .art1 {
   width: 100%;
   height: 18vh;
@@ -97,6 +102,11 @@ html::-webkit-scrollbar-thumb{
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.hotstuff{
+  margin:auto;
+  width:90%;
 }
 
 .art3 {
@@ -164,8 +174,13 @@ html::-webkit-scrollbar-thumb{
                         background-color:white;
                       }
 
+                      .comon{
+                        margin:0;
+                        width:50%;
+                      }
+
                       .art1 {
-                        width: 50%;
+                        width: 100%;
                         height: 30vh;
                         background-image: url("../img/art1_musica_.svg");
                         background-size: contain;
@@ -175,13 +190,18 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art2 {
-                        width: 50%;
+                        width: 100%;
                         height: 30vh;
                         background-image: url("../img/art2_lectura_.svg");
                         background-size: contain;
                         background-position: center;
                         background-repeat: no-repeat;
                         cursor: pointer;
+                      }
+
+                      .hotstuff{
+                        margin:0;
+                        width:100%;
                       }
 
                       .art3 {
@@ -195,7 +215,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art4 {
-                        width: 50%;
+                        width: 100%;
                         height: 30vh;
                         background-image: url("../img/art4_juegos_.svg");
                         background-size: contain;
@@ -205,7 +225,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art5 {
-                        width: 50%;
+                        width: 100%;
                         height: 30vh;
                         background-image: url("../img/art5_otros_.svg");
                         background-size: contain;
@@ -231,8 +251,13 @@ html::-webkit-scrollbar-thumb{
                         background-color:white;
                       }
 
+                      .comon{
+                        margin:0;
+                        width:50%;
+                      }
+
                       .art1 {
-                        width: 50%;
+                        width: 100%;
                         height: 40vh;
                         background-image: url("../img/art1_musica_.svg");
                         background-size: contain;
@@ -242,13 +267,18 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art2 {
-                        width: 50%;
+                        width: 100%;
                         height: 40vh;
                         background-image: url("../img/art2_lectura_.svg");
                         background-size: contain;
                         background-position: center;
                         background-repeat: no-repeat;
                         cursor: pointer;
+                      }
+
+                      .hotstuff{
+                        width:100%;
+                        margin:0;
                       }
 
                       .art3 {
@@ -262,7 +292,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art4 {
-                        width: 50%;
+                        width: 100%;
                         height: 35vh;
                         background-image: url("../img/art4_juegos_.svg");
                         background-size: contain;
@@ -272,7 +302,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art5 {
-                        width: 50%;
+                        width: 100%;
                         height: 35vh;
                         background-image: url("../img/art5_otros_.svg");
                         background-size: contain;
@@ -306,8 +336,13 @@ html::-webkit-scrollbar-thumb{
                         background-color:white;
                       }
 
-                      .art1 {
+                      .comon{
+                        margin:0;
                         width: 50%;
+                      }
+
+                      .art1 {
+                        width: 100%;
                         height: 40vh;
                         background-image: url("../img/art1_musica_.svg");
                         background-size: contain;
@@ -317,13 +352,18 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art2 {
-                        width: 50%;
+                        width: 100%;
                         height: 40vh;
                         background-image: url("../img/art2_lectura_.svg");
                         background-size: contain;
                         background-position: center;
                         background-repeat: no-repeat;
                         cursor: pointer;
+                      }
+
+                      .hotstuff{
+                        margin:0;
+                        width: 100%;
                       }
 
                       .art3 {
@@ -337,7 +377,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art4 {
-                        width: 50%;
+                        width: 100%;
                         height: 35vh;
                         background-image: url("../img/art4_juegos_.svg");
                         background-size: contain;
@@ -347,7 +387,7 @@ html::-webkit-scrollbar-thumb{
                       }
 
                       .art5 {
-                        width: 50%;
+                        width: 100%;
                         height: 35vh;
                         background-image: url("../img/art5_otros_.svg");
                         background-size: contain;
@@ -358,5 +398,6 @@ html::-webkit-scrollbar-thumb{
 
                       .banner_publicidad{
                         margin-bottom: 5%;
+                        margin-top: 3%;
                       }
                     }

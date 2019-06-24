@@ -18,13 +18,11 @@ class CreateProductsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->boolean('active')->default(1); //si el producto esta o no activo, preguntar a Rodo, o sea si el producto esta todavia en lista
-            $table->string('poster')->nullable();
-            $table->integer('quantity');
-            $table->integer('class')->nullable(); //esto va a servir para aplicar "9" cuando en el form el producto es: coleccionable, vintage y original, entonces impacta en la categoria HOTSTUFF
             $table->string('detail');
             $table->integer('user_id')->unsigned();
             $table->integer('category_id')->unsigned();
             $table->integer('subcategory_id')->unsigned();
+            $table->integer('hits')->nullable(); //contador de visitas, impacta en HOTSTUFF que deja de ser una categoria;
         });
     }
 
